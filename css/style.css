@@ -329,6 +329,8 @@ section {
   place-items: center;
   gap: 4.5rem;
   row-gap: 5rem;
+  max-width: 100%;
+  width: 1200px;
 }
 .project-card{
   display: flex;
@@ -477,5 +479,13 @@ section {
   }
   .contact form{
     flex-direction: column;
+  }
+  .project-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:0 1rem;
+    /* margin: 0 auto; */
   }
 }
