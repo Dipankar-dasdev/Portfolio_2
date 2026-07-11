@@ -42,6 +42,10 @@ body {
   font-size: 3rem;
   color: var(--main-color);
   display: none;
+  transition: transform 0.3s ease;
+}
+#menu-icon.bx-x{
+  transform: rotate(180deg) scale(1.2);
 }
 
 .logo {
@@ -428,6 +432,7 @@ section {
 @media(max-width:600px){
   #menu-icon{
     display: block;
+    
   }
   .navbar{
     position: absolute;
@@ -439,7 +444,16 @@ section {
     border-bottom-left-radius: 2rem;
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
-    display: none;
+    /* display: none; */
+
+    opacity: 0;
+    visibility: hidden;
+    transform:translateY(-15px) scale(.95);
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease,
+        visibility .3s;
   }
 
   .navbar a{
@@ -449,7 +463,10 @@ section {
     color: var(--text-color);
   }
   .navbar.active{
-    display: block;
+    /* display: block; */
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0) scale(1);
   }
   .gradient-btn{
     display: none;

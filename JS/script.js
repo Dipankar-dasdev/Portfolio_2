@@ -15,3 +15,15 @@ navLinks.forEach(link => {
         navbar.classList.remove('active');
     });
 });
+
+document.addEventListener("click", (e) => {
+    if (
+        navbar.classList.contains("active") &&
+        !navbar.contains(e.target) &&
+        e.target !== menuIcon
+    ) {
+        navbar.classList.remove("active");
+        menuIcon.classList.remove("bx-x");
+    }
+});
+
