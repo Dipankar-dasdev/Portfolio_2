@@ -101,7 +101,7 @@ span {
 section {
   min-height: 100vh;
   padding: 10rem 15%;
-  scroll-margin-top: 10rem;
+  scroll-margin-top: 5rem;
 }
 
 .home {
@@ -109,7 +109,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 15rem;
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 .home-content {
@@ -119,7 +119,7 @@ section {
   text-align: right;
 }
 
-.home-content hl {
+.home-content h1 {
   font-size: 8rem;
   font-weight: 700;
   margin-top: 1.5rem;
