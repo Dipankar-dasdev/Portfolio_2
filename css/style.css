@@ -178,6 +178,7 @@ section {
 .btn-group {
   display: flex;
   gap: 1.5rem;
+  /* margin-top: auto; */
 }
 
 .btn {
@@ -368,7 +369,55 @@ section {
   font-size: 3rem;
 }
 .project-card p{
+  /* flex-grow: 1; */
   font-size: 1.6rem;
+}
+/* .tech-stack{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--main-color);
+    letter-spacing: 0.5px;
+    margin-top: -0.8rem;
+    margin-bottom: -0.5rem;
+    opacity: 0.9;
+} */
+.tech-stack{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1.2rem;
+    flex-wrap:wrap;
+    margin:0.5rem 0 1rem;
+}
+
+.tech{
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+
+    padding:.6rem 1rem;
+    border:1px solid var(--main-color);
+    border-radius:2rem;
+
+    color:var(--main-color);
+    background:rgba(234,88,12,.08);
+
+    transition:.3s ease;
+}
+
+.tech i{
+    font-size:1.8rem;
+}
+
+.tech span{
+    font-size:1.3rem;
+    font-weight:600;
+}
+
+.tech:hover{
+    box-shadow: 0 0 5px var(--main-color),
+              0 0 10px var(--main-color);
+    transform:translateY(-2px);
 }
 
 .contact{
